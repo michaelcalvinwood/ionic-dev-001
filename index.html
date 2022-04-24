@@ -40,20 +40,22 @@
             <ion-grid class="ion-text-center ion-margin">
                 <ion-row>
                     <ion-col>
-                        <ion-button>
+                        <ion-button id="calc-btn">
+                            <ion-icon slot="start" name="calculator-outline"></ion-icon>
                             Calculate
                         </ion-button>
                     </ion-col>
                     <ion-col>
-                        <ion-button>
+                        <ion-button fill="outline" id="reset-btn">
+                            <ion-icon slot="start" name="refresh-outline"></ion-icon>
                             Reset
                         </ion-button>
                     </ion-col>
                 </ion-row>
+                <ion-row>
+                    <ion-col id="result"></ion-col>
+                </ion-row>
             </ion-grid>
-            <div id="result">
-
-            </div>
           </ion-content>
       </ion-app>
   </body>
